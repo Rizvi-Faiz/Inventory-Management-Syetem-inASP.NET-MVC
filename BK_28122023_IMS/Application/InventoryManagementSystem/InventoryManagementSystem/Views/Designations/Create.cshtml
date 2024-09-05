@@ -1,0 +1,45 @@
+﻿@model InventoryManagementSystem.Models.Designation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Registor</h1>
+
+<h4>Designation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DesignationName" class="control-label"></label>
+                <input asp-for="DesignationName" class="form-control" />
+                <span asp-validation-for="DesignationName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesignaionDescription" class="control-label"></label>
+                <input asp-for="DesignaionDescription" class="form-control" />
+                <span asp-validation-for="DesignaionDescription" class="text-danger"></span>
+            </div>
+         
+            <div class="form-group">
+                <label asp-for="Status" class="form-label">Select Status: </label>
+                <select asp-for="Status" asp-items="@ViewBag.Status" class="form-control">
+                    <option value="">Select Status</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-danger">Cancel</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<InventoryManagementSystem.Models.Designation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Designations</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Registor New Designation</a>
+</p>
+<table id="myTable" class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SerialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesignationName)
+            </th>
+           @*  <th>
+                @Html.DisplayNameFor(model => model.DesignaionDescription)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesignationName)
+            </td>
+           @*  <td>
+                @Html.DisplayFor(modelItem => item.DesignaionDescription)
+            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Did" class="btn btn-info">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Did" class="btn btn-primary">Details</a> 
+                @* <a asp-action="Delete" asp-route-id="@item.Did">Delete</a> *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

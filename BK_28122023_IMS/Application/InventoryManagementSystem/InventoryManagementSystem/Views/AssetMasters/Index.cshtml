@@ -1,0 +1,54 @@
+﻿@model IEnumerable<InventoryManagementSystem.Models.AssetMaster>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Assets</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Registor New Asset</a>
+</p>
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SerialNumber)
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.AssetName) *@Asset Type
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.AssetDescription) *@ Company
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.AssetModel) *@ Model
+            </th>
+            <th></th>
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssetName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssetDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssetModel)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AMid" class="btn btn-info">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AMid" class="btn btn-primary">Details</a> 
+                @* <a asp-action="Delete" asp-route-id="@item.AMid">Delete</a> *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,48 @@
+﻿@model InventoryManagementSystem.Models.AssetMaster
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Asset</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           @*  <div class="form-group">
+                <label asp-for="SerialNumber" class="control-label"></label>
+                <input asp-for="SerialNumber" class="form-control" />
+                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="AssetName" class="control-label">Asset Type</label>
+                <input asp-for="AssetName" class="form-control" />
+                <span asp-validation-for="AssetName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AssetDescription" class="control-label">Company</label>
+                <input asp-for="AssetDescription" class="form-control" />
+                <span asp-validation-for="AssetDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AssetModel" class="control-label">Modal</label>
+                <input asp-for="AssetModel" class="form-control" />
+                <span asp-validation-for="AssetModel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

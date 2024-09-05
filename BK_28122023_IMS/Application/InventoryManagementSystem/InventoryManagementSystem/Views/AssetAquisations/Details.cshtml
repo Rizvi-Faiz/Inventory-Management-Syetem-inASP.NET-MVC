@@ -1,0 +1,66 @@
+﻿@model InventoryManagementSystem.Models.AssetAquisation
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>AssetAquisation</h1>
+
+<div>
+<h4>Details</h4>
+    <hr />
+    <dl class="row">
+@*         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SerialNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SerialNumber)
+        </dd> *@
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.AssetMaster) *@Asset Type
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AssetMaster.AssetName)
+        </dd>
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.VendorMaster) *@Vendor name
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VendorMaster.VendorName)
+        </dd>
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.AssetMaster) *@Model
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AssetMaster.AssetModel)
+        </dd>
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.Employee) *@Employee Id
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Employee.EmpId)
+        </dd>
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.ReceivedDate) *@Received Date
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReceivedDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Remark)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Remark)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.AAid" class="btn btn-info">Edit</a> |
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</div>

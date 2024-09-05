@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - InventoryManagementSystem</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/InventoryManagementSystem.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/jszip-3.10.1/dt-1.13.8/af-2.6.0/b-2.4.2/b-html5-2.4.2/b-print-2.4.2/fc-4.3.0/fh-3.4.0/r-2.5.0/sb-1.6.0/sp-2.2.0/sl-1.7.0/datatables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <style>
+        #lo {
+            width: 30px;
+       /*      position: absolute;
+            top: 10px;
+            right: 90px; */
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/jszip-3.10.1/dt-1.13.8/af-2.6.0/b-2.4.2/b-html5-2.4.2/b-print-2.4.2/fc-4.3.0/fh-3.4.0/r-2.5.0/sb-1.6.0/sp-2.2.0/sl-1.7.0/datatables.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand"style="background-color:bisque;padding:5px" asp-area="" asp-controller="Home" asp-action="Index">IMS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                       <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="mastersDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Admin
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="mastersDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Users" asp-action="Index">User</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Roles" asp-action="Index">Role</a>
+                
+                            </div>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="mastersDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Master
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="mastersDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Employees" asp-action="Index">Employee Master</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Departments" asp-action="Index">Department Master</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Designations" asp-action="Index">Designation Master</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Locations" asp-action="Index">Location Master</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="AssetMasters" asp-action="Index">Asset Master</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Vendormasters" asp-action="Index"> Vender Master</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="mastersDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Transaction
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="mastersDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="AssetProcurements" asp-action="Index">Asset Procurement</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="AssetDeployements" asp-action="Index">Asset Deployement</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="AssetAquisations" asp-action="Index">Asset Acquisition</a>
+                                @* <a class="dropdown-item" asp-area="" asp-controller="User" asp-action="Index">Asset Information Master</a> *@
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="mastersDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Reports
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="mastersDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Employees" asp-action="IndexReport">Employee Detail Report</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="AssetProcurements" asp-action="IndexReport">Asset Procurement Report</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="AssetDeployements" asp-action="IndexReport">Asset Deployement Report</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="AssetAquisations" asp-action="IndexReport">Asset Acquisition Report</a>
+                                @* <a class="dropdown-item" asp-area="" asp-controller="User" asp-action="Index">Asset Information Master</a> *@
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Policy</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Logout">
+                                <span style="margin:20px">@ViewBag.mySession</span>
+                                <button type="button" class="btn btn-outline-dark">Logout</button>
+                            </a>
+                            @* <img src="~/images/b7e004f1d769c61578c0fae099521b6a.jpeg" /> *@
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                            <img id="lo"src="~/images/b7e004f1d769c61578c0fae099521b6a.jpeg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted text-center">
+        <div class="container">
+            &copy; 2023 - InventoryManagementSystem  2023-24
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/jszip-3.10.1/dt-1.13.8/af-2.6.0/b-2.4.2/b-html5-2.4.2/b-print-2.4.2/fc-4.3.0/fh-3.4.0/r-2.5.0/sb-1.6.0/sp-2.2.0/sl-1.7.0/datatables.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

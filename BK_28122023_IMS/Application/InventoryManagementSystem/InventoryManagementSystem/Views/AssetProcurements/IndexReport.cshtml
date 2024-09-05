@@ -1,0 +1,223 @@
+﻿@model IEnumerable<InventoryManagementSystem.Models.AssetProcurement>
+
+@{
+    ViewData["Title"] = "IndexReport";
+}
+
+<h1>Asset Procurement Report</h1>
+
+
+@* <form asp-action="IndexReport" method="get">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <label for="filterType" class="form-label">Select Filter:</label>
+            <select id="filterType" name="filterType" class="form-select">
+                <option value="dateRange">Date Range</option>
+                <option value="purchaseOrder">Purchase Order</option>
+                <option value="quotationNumber">Quotation Number</option>
+            </select>
+        </div>
+
+        <div id="dateRangeFilter" class="col-md-8" style="display:none;">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="startDate" class="form-label">Start Date:</label>
+                    <input type="date" id="startDate" name="startDate" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label for="endDate" class="form-label">End Date:</label>
+                    <input type="date" id="endDate" name="endDate" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div id="purchaseOrderFilter" class="col-md-8" style="display:none;">
+            <label for="purchaseOrder" class="form-label">Purchase Order:</label>
+            <input type="number" id="purchaseOrder" name="purchaseOrder" class="form-control" />
+        </div>
+
+        <div id="quotationNumberFilter" class="col-md-8" style="display:none;">
+            <label for="quotationNumber" class="form-label">Quotation Number:</label>
+            <input type="number" id="quotationNumber" name="quotationNumber" class="form-control" />
+        </div>
+
+        <div class="col-md-12 mt-3">
+            <button type="submit" class="btn btn-primary">Apply Filters</button>
+        </div>
+    </div>
+</form> *@
+@* <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#filterModal">
+    Filter
+</button> *@
+
+<!-- Modal -->
+@* <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="filterModalLabel">Filter Options</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> *@
+                <!-- Your form content goes here -->
+                <form asp-action="IndexReport" method="get">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label for="filterType" class="form-label">Select Filter:</label>
+                            <select id="filterType" name="filterType" class="form-select">
+                                <option value="">Select Filter</option>
+                                <option value="dateRange">Purchase Date Range</option>
+                                <option value="purchaseOrder">Purchase Order</option>
+                                <option value="quotationNumber">Quotation Number</option>
+                            </select>
+                        </div>
+
+                        <div id="dateRangeFilter" class="col-md-8" style="display:none;">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="startDate" class="form-label">From:</label>
+                                    <input type="date" id="startDate" name="startDate" class="form-control" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="endDate" class="form-label">To:</label>
+                                    <input type="date" id="endDate" name="endDate" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="purchaseOrderFilter" class="col-md-8" style="display:none;">
+                            <label for="purchaseOrder" class="form-label">PO.No.:</label>
+                            <input type="number" id="purchaseOrder" name="purchaseOrder" class="form-control" />
+                        </div>
+
+                        <div id="quotationNumberFilter" class="col-md-8" style="display:none;">
+                            <label for="quotationNumber" class="form-label">Quotation:</label>
+                            <input type="number" id="quotationNumber" name="quotationNumber" class="form-control" />
+                        </div>
+
+                        <div class="col-md-12 mt-3">
+                            <button type="submit" class="btn btn-primary">Apply Filters</button>
+                        </div>
+                    </div>
+                </form>
+          @*   </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="applyFilters()">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+</div> *@
+<script>
+    document.getElementById('filterType').addEventListener('change', function () {
+        var selectedFilter = this.value;
+
+        // Hide all filters
+        document.getElementById('dateRangeFilter').style.display = 'none';
+        document.getElementById('purchaseOrderFilter').style.display = 'none';
+        document.getElementById('quotationNumberFilter').style.display = 'none';
+
+        // Show the selected filter
+        if (selectedFilter === 'dateRange') {
+            document.getElementById('dateRangeFilter').style.display = 'block';
+        } else if (selectedFilter === 'purchaseOrder') {
+            document.getElementById('purchaseOrderFilter').style.display = 'block';
+        } else if (selectedFilter === 'quotationNumber') {
+            document.getElementById('quotationNumberFilter').style.display = 'block';
+        }
+    });
+</script>
+
+
+
+<table id="myTable" class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SerialNumber)
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.AssetMaster) *@Asset Name
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.VendorMaster) *@Vendor Name
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.AssetMaster) *@Model
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.PurchaseOrder) *@PO.No.
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.PurchaseDate) *@Purchase Date
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.QuotationNumber) *@Quotation
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.Quantity) *@Qty.
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.DeliveryDate) *@Delivery Date
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Remark)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssetMaster.AssetName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendorMaster.VendorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssetMaster.AssetModel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuotationNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remark)
+            </td>
+            <td>
+                @* <a asp-action="Edit" asp-route-id="@item.APid">Edit</a> | *@
+                <a asp-action="Details" asp-route-id="@item.APid" class="btn btn-primary">Details</a> 
+                @* <a asp-action="Delete" asp-route-id="@item.APid">Delete</a> *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<script>
+    function applyFilters() {
+        // You can perform any additional actions here before submitting the form
+        // For example, you may want to manually trigger the form submission
+        document.querySelector('form').submit();
+    }
+</script>

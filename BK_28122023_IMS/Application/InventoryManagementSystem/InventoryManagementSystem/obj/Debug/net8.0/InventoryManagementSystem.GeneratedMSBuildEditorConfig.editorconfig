@@ -1,0 +1,279 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = InventoryManagementSystem
+build_property.RootNamespace = InventoryManagementSystem
+build_property.ProjectDir = C:\Users\rizvi\OneDrive\Desktop\ITC\BK_28122023_IMS\Application\InventoryManagementSystem\InventoryManagementSystem\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\rizvi\OneDrive\Desktop\ITC\BK_28122023_IMS\Application\InventoryManagementSystem\InventoryManagementSystem
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetAquisations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRBcXVpc2F0aW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetAquisations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRBcXVpc2F0aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetAquisations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRBcXVpc2F0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetAquisations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRBcXVpc2F0aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetAquisations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRBcXVpc2F0aW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetAquisations/IndexReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRBcXVpc2F0aW9uc1xJbmRleFJlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetDeployements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXREZXBsb3llbWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetDeployements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXREZXBsb3llbWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetDeployements/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXREZXBsb3llbWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetDeployements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXREZXBsb3llbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetDeployements/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXREZXBsb3llbWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetDeployements/IndexReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXREZXBsb3llbWVudHNcSW5kZXhSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetMasters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRNYXN0ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetMasters/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRNYXN0ZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetMasters/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRNYXN0ZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetMasters/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRNYXN0ZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetMasters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRNYXN0ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetProcurements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRQcm9jdXJlbWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetProcurements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRQcm9jdXJlbWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetProcurements/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRQcm9jdXJlbWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetProcurements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRQcm9jdXJlbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetProcurements/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRQcm9jdXJlbWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/AssetProcurements/IndexReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRQcm9jdXJlbWVudHNcSW5kZXhSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Departments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Departments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Departments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Departments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Departments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Designations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Designations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Designations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Designations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Designations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Employees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Employees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Employees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Employees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Employees/IndexReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4UmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Locations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Locations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Locations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Locations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Locations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Shared/_LayoutLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/VendorMasters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yTWFzdGVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/VendorMasters/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yTWFzdGVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/VendorMasters/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yTWFzdGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/VendorMasters/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yTWFzdGVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/VendorMasters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yTWFzdGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rizvi/OneDrive/Desktop/ITC/BK_28122023_IMS/Application/InventoryManagementSystem/InventoryManagementSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-mhn93aueuf

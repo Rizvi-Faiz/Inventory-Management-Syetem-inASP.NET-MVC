@@ -1,0 +1,83 @@
+﻿@model IEnumerable<InventoryManagementSystem.Models.AssetDeployement>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Asset Deployement</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Create New Deployement</a>
+</p>
+<table id="myTable" class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SerialNumber)
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.AssetMaster) *@Asset Type
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.VendorMaster) *@Vendor Name
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.AssetMaster) *@Model
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.Employee) *@Employee Id
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.IssueDate) *@Issue Date
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Department)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Remark)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssetMaster.AssetName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendorMaster.VendorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssetMaster.AssetModel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.EmpId)
+            </td>
+            <td>
+                    @item.IssueDate.ToShortDateString()
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department.DepartmentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remark)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ADid" class="btn btn-info">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ADid" class="btn btn-primary">Details</a>
+                @* <a asp-action="Delete" asp-route-id="@item.ADid">Delete</a> *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

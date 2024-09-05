@@ -1,0 +1,50 @@
+﻿@model InventoryManagementSystem.Models.Location
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Location</h4> 
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Lid" />
+            <div class="form-group">
+                <label asp-for="LocationName" class="control-label"></label>
+                <input asp-for="LocationName" class="form-control" />
+                <span asp-validation-for="LocationName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocationDescription" class="control-label"></label>
+                <input asp-for="LocationDescription" class="form-control" />
+                <span asp-validation-for="LocationDescription" class="text-danger"></span>
+            </div>
+           @*  <div class="form-group">
+                <label asp-for="SerialNumber" class="control-label"></label>
+                <input asp-for="SerialNumber" class="form-control" />
+                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="Status" class="form-label">Select Status: </label>
+                <select asp-for="Status" asp-items="@ViewBag.Status" class="form-control">
+                    <option value="">Select Status</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-danger">Cancel</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

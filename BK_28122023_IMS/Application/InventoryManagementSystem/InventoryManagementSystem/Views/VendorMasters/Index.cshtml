@@ -1,0 +1,47 @@
+﻿@model IEnumerable<InventoryManagementSystem.Models.VendorMaster>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Vendors</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Registor New Vendor</a>
+</p>
+<table id="myTable" class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SerialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VendorName)
+            </th>
+           @*  <th>
+                @Html.DisplayNameFor(model => model.VendorDescription)
+            </th> *@
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendorName)
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.VendorDescription)
+            </td> *@
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VMid" class="btn btn-info">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.VMid" class="btn btn-primary">Details</a> 
+                @* <a asp-action="Delete" asp-route-id="@item.VMid">Delete</a> *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

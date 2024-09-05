@@ -1,0 +1,36 @@
+﻿@model InventoryManagementSystem.Models.VendorMaster
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+    <h1>Vendor</h1>
+
+<div>
+<h4>Details</h4>
+    <hr />
+    <dl class="row">
+        @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SerialNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SerialNumber)
+        </dd> *@
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VendorName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VendorName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VendorDescription)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VendorDescription)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.VMid" class="btn btn-info">Edit</a> |
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</div>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<InventoryManagementSystem.Models.Department>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Departments</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Registor New Department</a>
+</p>
+<table id="myTable" class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SerialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartmentName)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.DepartmentDescription)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartmentName)
+            </td>
+           @*  <td>
+                @Html.DisplayFor(modelItem => item.DepartmentDescription)
+            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Depid" class="btn btn-info">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Depid" class="btn btn-primary">Details</a> 
+                @* <a asp-action="Delete" asp-route-id="@item.Depid">Delete</a> *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

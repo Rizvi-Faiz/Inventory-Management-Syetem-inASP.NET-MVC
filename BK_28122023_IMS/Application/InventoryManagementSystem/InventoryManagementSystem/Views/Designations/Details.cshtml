@@ -1,0 +1,42 @@
+﻿@model InventoryManagementSystem.Models.Designation
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Designation</h1>
+
+<div>
+    <h4>Details</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesignationName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesignationName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesignaionDescription)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesignaionDescription)
+        </dd>
+       @*  <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SerialNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SerialNumber)
+        </dd> *@
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Did" class="btn btn-info">Edit</a> |
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</div>

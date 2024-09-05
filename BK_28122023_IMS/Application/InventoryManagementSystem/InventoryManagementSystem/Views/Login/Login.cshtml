@@ -1,0 +1,317 @@
+﻿@model InventoryManagementSystem.Models.User
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+@*
+
+<div class="row">
+    <div class="col-md-4">
+        @{
+            if (ViewBag.Message != null)
+            {
+                <p style="color:red">@ViewBag.Message</p>
+            }
+        }
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+           
+            
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+ 
+ *@
+ @* @model InventoryManagementSystem.Models.User
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-12 col-sm-8 col-md-6 m-auto">
+            <div class="card border-0 shadow">
+                <div class="card-body">
+                    <svg class="mx-auto my-3" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+            @{
+                if (ViewBag.Message != null)
+                {
+                    <p style="color:red">@ViewBag.Message</p>
+                }
+            }
+            <form asp-action="Login">
+
+                <div>
+                    <label asp-for="UserId" class="control-label"></label>
+                    <input asp-for="UserId" class="form-control my-3 py-2" />
+                    <span asp-validation-for="UserId" class="text-danger"></span>
+                </div>
+
+                <div >
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control my-3 py-2" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="text-center mt-3">
+                    <input type="submit" value="Login" class="btn btn-primary" />
+                </div>
+            </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} *@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>/* POPPINS FONT */
+  @@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    
+   
+}
+.wrapper{
+            background-color: #9fa9f785;
+    padding: 0 30px 0 30px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+        .side-image {
+            background-image: url('images\b7e004f1d769c61578c0fae099521b6a.jpeg');
+            /* background-image: url('images\itc-2-scaled.jpg'); */
+    /* background-image: url(""); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+.row{
+  width:  900px;
+  height:550px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0px;
+  box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p{
+    color:black;
+    font-size: 20px; 
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input-box{
+  width: 330px;
+  box-sizing: border-box;
+}
+img{
+    width: 330px;
+    position: absolute;
+    top: 160px;
+    left: 90px;
+}
+.input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field input:focus ~ label
+   {
+    top: -10px;
+    font-size: 13px;
+  }
+  .input-field input:valid ~ label
+  {
+   top: -10px;
+   font-size: 13px;
+   color: #5d5076;
+ }
+ .input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #743ae1;
+ }
+ .submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+ }
+ .submit:hover{
+    background: rgba(37, 95, 156, 0.937);
+    color: #fff;
+ }
+ .signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+@@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+    }
+    img{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p, i{
+        font-size: 16px;
+    }
+    .row{
+        max-width:420px;
+        width: 100%;
+    }
+}</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Welcome To IMC</title>
+</head>
+<body style="background:#0085ff4f">
+    <div class="wrapper">
+        <div class="container main">
+    
+                <div class="row">
+                    <div class="col-md-6 side-image">
+
+                        <!-------------      image     ------------->
+                        @* <img src="~/images/b7e004f1d769c61578c0fae099521b6a.jpeg" /> *@
+                        @* <img src="~/images/oip.jpeg" /> *@
+                    
+
+                    </div>
+                    <div class="col-md-6 right">
+                        <div class="input-box">
+                            <form asp-action="Login">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <header>
+                                    <h3>Welcome To IMS</h3><br />
+                                Login
+                            </header>
+                            <div class="input-field">
+                                <input asp-for="UserId" class="input" id="email" required="" autocomplete="off" />
+                                <label asp-for="UserId" ></label>
+                                <span asp-validation-for="UserId" class="text-danger"></span>
+                            </div>
+                            <div class="input-field">
+                                <input asp-for="Password"  type="password" class="input" id="pass" required="">
+                                    <label asp-for="Password">Password</label>
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                            <div class="input-field">
+                          
+                                <input type="submit" class="submit" value="Login">
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    @section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
+</body>
+</html>

@@ -1,0 +1,87 @@
+﻿@model InventoryManagementSystem.Models.AssetProcurement
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>AssetProcurement</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+@*             <div class="form-group">
+                <label asp-for="SerialNumber" class="control-label"></label>
+                <input asp-for="SerialNumber" class="form-control" />
+                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="AssetMasterId" class="form-label">Asset Type</label>
+                <select asp-for="AssetMasterId" class ="form-control" asp-items="ViewBag.AssetMasterId">
+                    <option value="">Select Type</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="VendorMasterId" class="form-label">Vendor Name</label>
+                <select asp-for="VendorMasterId" class ="form-control" asp-items="ViewBag.VendorMasterId">
+                    <option value="">Select Vendor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AssetMasterId" class="form-label">Model</label>
+                <select asp-for="AssetMasterId" class="form-control" asp-items="ViewBag.AssetMasterModelId">
+                    <option value="">Select Type</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="PurchaseOrder" class="control-label">PO.No.</label>
+                <input asp-for="PurchaseOrder" class="form-control" />
+                <span asp-validation-for="PurchaseOrder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuotationNumber" class="control-label">Quotation</label>
+                <input asp-for="QuotationNumber" class="form-control" />
+                <span asp-validation-for="QuotationNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label">Qty.</label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PurchaseDate" class="control-label">Purchase Date</label>
+                <input asp-for="PurchaseDate" class="form-control" value="@DateTime.Now" type="date" />
+                <span asp-validation-for="PurchaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeliveryDate" class="control-label">Delivery Date</label>
+                <input asp-for="DeliveryDate" class="form-control" value="@DateTime.Now" type="date" />
+                <span asp-validation-for="DeliveryDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="form-label"></label>
+                <select asp-for="Status" asp-items="@ViewBag.Status" class="form-control">
+                    <option value="">Select Status</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Remark" class="control-label"></label>
+                <input asp-for="Remark" class="form-control" />
+                <span asp-validation-for="Remark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-danger">Cancel</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
